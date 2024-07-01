@@ -27,6 +27,10 @@ The key's randomart image is:
 |*=.* o + .       |
 +----[SHA256]-----+
 
+locate to c/Users/Khoa.Truong/.ssh/id_ed25519.pub then past it in 
+setting >add new ssh keys
+
+
 link existing project
 make sure terminal is in git bash
 
