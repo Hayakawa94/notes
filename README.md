@@ -41,3 +41,11 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin git@github.com:Hayakawa94/RPMtools.git
 git push -u origin main
+
+
+Safe merge
+
+git checkout master
+git pull origin master
+git merge test
+git push origin master
