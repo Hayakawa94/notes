@@ -26,3 +26,14 @@ The key's randomart image is:
 |O = O * o        |
 |*=.* o + .       |
 +----[SHA256]-----+
+
+link existing project
+make sure terminal is in git bash
+
+echo "# RPMtools" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:Hayakawa94/RPMtools.git
+git push -u origin main
