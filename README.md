@@ -4,9 +4,9 @@ How to set up git repo
 3. in R create your project with GitHub box tick
 4. create a test.R file then do initial comit
 5. Copy and paste this in the terminal
-		git remote add origin <your SSH>
-		git branch -M main
-		git push -u origin main
+git remote add origin <your SSH>
+git branch -M main
+git push -u origin main
 
 ######## SSH KEY is required if this is your first tie set up github
 1. paste this in your terminal  ssh-keygen -t ed25519 -C <email address associate with <github account>
