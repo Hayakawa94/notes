@@ -1,51 +1,15 @@
-How to set up SSH key
+How to set up git repo
+1. Create a new repo in GitHub.com
+2. Select SSH 
+3. in R create your project with GitHub box tick
+4. create a test.R file then do initial comit
+5. Copy and paste this in the terminal
+		git remote add origin <your SSH>
+		git branch -M main
+		git push -u origin main
 
-$ ssh-keygen -t ed25519 -C "kadt94@gmail.com"
-Generating public/private ed25519 key pair.
-Enter file in which to save the key (/c/Users/Khoa.Truong/.ssh/id_ed25519):
-/c/Users/Khoa.Truong/.ssh/id_ed25519 already exists.
-Overwrite (y/n)? y
-Enter passphrase (empty for no passphrase):
-Enter same passphrase again:
-Passphrases do not match.  Try again.
-Enter passphrase (empty for no passphrase):
-Enter same passphrase again:
-Your identification has been saved in /c/Users/Khoa.Truong/.ssh/id_ed25519
-Your public key has been saved in /c/Users/Khoa.Truong/.ssh/id_ed25519.pub
-The key fingerprint is:
-SHA256:VTRLDMwFwQlGrBwTVi06c7sjYyNpjMOnygomLnLHXZw kadt94@gmail.com
-The key's randomart image is:
-+--[ED25519 256]--+
-|      o==*+O*    |
-|     .o.o *o.o   |
-|     . = .. .    |
-|      * ..       |
-|       =So       |
-|        E        |
-|oo + o . .       |
-|O = O * o        |
-|*=.* o + .       |
-+----[SHA256]-----+
-
-locate to c/Users/Khoa.Truong/.ssh/id_ed25519.pub then past it in 
-setting >add new ssh keys
-
-
-link existing project
-make sure terminal is in git bash
-
-echo "# RPMtools" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin git@github.com:Hayakawa94/RPMtools.git
-git push -u origin main
-
-
-Safe merge
-
-git checkout master
-git pull origin master
-git merge test
-git push origin master
+######## SSH KEY is required if this is your first tie set up github
+1. paste this in your terminal  ssh-keygen -t ed25519 -C <email address associate with <github account>
+2. got to c/Users/Khoa.Truong/.ssh/id_ed25519.pub (this is the default location), but can cd to another location
+3. on GitHub.com go to setting>SSH and GPG KEYS then add new SSH Key
+4. paste the key  from id_ed25519.pub to the box. which looks like this ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL6hZXdfyN2dlIym68LMHJl0o/vfWiQf8ik5lvF1R1Nr <email address associate with github account>
