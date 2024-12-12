@@ -9,7 +9,7 @@ git branch -M main
 git push -u origin main
 
 ######## SSH KEY is required if this is your first tie set up github
-1. paste this in your terminal  ssh-keygen -t ed25519 -C <email address associate with <github account>
-2. got to c/Users/Khoa.Truong/.ssh/id_ed25519.pub (this is the default location), but can cd to another location
+1. paste this in your R terminal  ssh-keygen -t ed25519 -C <email address associate with <github account>
+2. go to c/Users/Khoa.Truong/.ssh/id_ed25519.pub (this is the default location), but can cd to another location in the R terminal
 3. on GitHub.com go to setting>SSH and GPG KEYS then add new SSH Key
 4. paste the key  from id_ed25519.pub to the box. which looks like this ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL6hZXdfyN2dlIym68LMHJl0o/vfWiQf8ik5lvF1R1Nr <email address associate with github account>
